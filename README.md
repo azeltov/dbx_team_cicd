@@ -1,4 +1,6 @@
-# This is Team 2 cicd databricks repo
+# This is Team 2 cicd databricks Repo
+
+https://github.com/databrickslabs/cicd-templates
  
 This is a sample project for Databricks, generated via cookiecutter.
 
