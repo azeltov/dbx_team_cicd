@@ -1,0 +1,9 @@
+{
+  "environments": {
+    "default": {
+      "profile": "DEFAULT",
+      "workspace_dir": "/Shared/dbx/cicd_team2_hackathon",
+      "artifact_location": "dbfs:/Shared/dbx/projects/cicd_team2_hackathon"
+    }
+  }
+}

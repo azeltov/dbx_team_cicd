@@ -1,0 +1,46 @@
+{
+    "default": {
+        "jobs": [
+            {
+                "name": "cicd_team2_hackathon-sample",
+                "new_cluster": {
+                    "spark_version": "7.2.x-cpu-ml-scala2.12",
+                    "node_type_id": "Standard_F4s",
+                    "num_workers": 2
+                },
+                "libraries": [],
+                "email_notifications": {
+                    "on_start": [],
+                    "on_success": [],
+                    "on_failure": []
+                },
+                "max_retries": 0,
+                "spark_python_task": {
+                    "python_file": "cicd_team2_hackathon/jobs/sample/entrypoint.py",
+                    "parameters": [
+                        "--conf-file",
+                        "conf/test/sample.json"
+                    ]
+                }
+            },
+            {
+                "name": "cicd_team2_hackathon-sample-integration-test",
+                "new_cluster": {
+                    "spark_version": "7.2.x-cpu-ml-scala2.12",
+                    "node_type_id": "Standard_F4s",
+                    "num_workers": 1
+                },
+                "libraries": [],
+                "email_notifications": {
+                    "on_start": [],
+                    "on_success": [],
+                    "on_failure": []
+                },
+                "max_retries": 0,
+                "spark_python_task": {
+                    "python_file": "tests/integration/sample_test.py"
+                }
+            }
+        ]
+    }
+}
