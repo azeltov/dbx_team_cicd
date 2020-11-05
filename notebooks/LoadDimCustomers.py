@@ -4,7 +4,7 @@
 # COMMAND ----------
 
 streamingCustomers = spark.read.parquet("/mnt/rawsqlcloudstreaming/dbo.Customers.parquet")
-
+display(streamingCustomers)
 
 # COMMAND ----------
 
