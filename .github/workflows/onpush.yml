@@ -49,11 +49,8 @@ jobs:
 
       - name: Deploy integration test
         run: |
-          dbx deploy --jobs=cicd_team2_hackathon-sample-integration-test
+          databricks jobs run-now --job-id 9
 
-      - name: Run integration test
-        run: |
-          dbx launch --job=cicd_team2_hackathon-sample-integration-test --trace
 
 
 
